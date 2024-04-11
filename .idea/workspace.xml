@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gamebox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gamebox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ghost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pacman.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,21 +32,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/hugo.lindgrensvenss/Programmering 2/Pacman/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hugo.lindgrensvenss/Programmering 2/Pacman",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/hugo.lindgrensvenss/Programmering 2/Pacman/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,6 +66,8 @@
       <workItem from="1711013056854" duration="1151000" />
       <workItem from="1711014273145" duration="1483000" />
       <workItem from="1712823289909" duration="804000" />
+      <workItem from="1712824513866" duration="21000" />
+      <workItem from="1712824623127" duration="1263000" />
     </task>
     <servers />
   </component>
