@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="la till Game.java för att jag behöver en fil som bestämmer hur spelet fungerar. glömde det (vet inte hur)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
-    </list>
+    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="arbetade på cell" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +65,7 @@
       <workItem from="1712823289909" duration="804000" />
       <workItem from="1712824513866" duration="21000" />
       <workItem from="1712824623127" duration="1298000" />
-      <workItem from="1713428087267" duration="2629000" />
+      <workItem from="1713428087267" duration="2769000" />
     </task>
     <task id="LOCAL−00001" summary="gjorde klart main, programmet fungerar inte än dock">
       <option name="closed" value="true" />
@@ -84,7 +81,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1713428490005</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="arbetade på cell">
+      <option name="closed" value="true" />
+      <created>1713448987570</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1713448987570</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gjorde klart main, programmet fungerar inte än dock" />
     <MESSAGE value="la till Game.java för att jag behöver en fil som bestämmer hur spelet fungerar. glömde det (vet inte hur)" />
-    <option name="LAST_COMMIT_MESSAGE" value="la till Game.java för att jag behöver en fil som bestämmer hur spelet fungerar. glömde det (vet inte hur)" />
+    <MESSAGE value="arbetade på cell" />
+    <option name="LAST_COMMIT_MESSAGE" value="arbetade på cell" />
   </component>
 </project>
