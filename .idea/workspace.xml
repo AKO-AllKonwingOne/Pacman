@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="arbetade på ghost.java under fritid.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="gjorde lite mer på ghost,gjorde några methods som jag inte har lagt till än, det är därför några saker är röt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +82,7 @@
       <workItem from="1713879272803" duration="148000" />
       <workItem from="1713879599592" duration="671000" />
       <workItem from="1713941898052" duration="12000" />
-      <workItem from="1714032902677" duration="604000" />
+      <workItem from="1714032902677" duration="1357000" />
     </task>
     <task id="LOCAL−00001" summary="gjorde klart main, programmet fungerar inte än dock">
       <option name="closed" value="true" />
@@ -114,7 +112,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1713879361042</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="gjorde lite mer på ghost,gjorde några methods som jag inte har lagt till än, det är därför några saker är röt">
+      <option name="closed" value="true" />
+      <created>1714035196678</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1714035196678</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +130,7 @@
     <MESSAGE value="la till Game.java för att jag behöver en fil som bestämmer hur spelet fungerar. glömde det (vet inte hur)" />
     <MESSAGE value="arbetade på cell" />
     <MESSAGE value="arbetade på ghost.java under fritid." />
-    <option name="LAST_COMMIT_MESSAGE" value="arbetade på ghost.java under fritid." />
+    <MESSAGE value="gjorde lite mer på ghost,gjorde några methods som jag inte har lagt till än, det är därför några saker är röt" />
+    <option name="LAST_COMMIT_MESSAGE" value="gjorde lite mer på ghost,gjorde några methods som jag inte har lagt till än, det är därför några saker är röt" />
   </component>
 </project>
