@@ -1,33 +1,73 @@
-public class Pacman {
-    private int row;
-    private int col;
+import java.awt.Point;
 
-    public Pacman(int row, int col) {
-        this.row = row;
-        this.col = col;
+// Klassen som representerar Pacman, ärver från Entity
+public class Pacman extends Entity {
+    // Konstruktor för att skapa en Pacman med given position
+    public Pacman(int x, int y) {
+        super(x, y);
     }
 
-    public void moveUp() {
-        row--;
+    // Metod för att flytta Pacman uppåt om möjligt
+    @Override
+    public void moveUp(Gamebox gamebox) {
+        if (canMoveUp(gamebox)) {
+            super.moveUp(gamebox);
+        }
     }
 
-    public void moveDown() {
-        row++;
+    // Metod för att flytta Pacman nedåt om möjligt
+    @Override
+    public void moveDown(Gamebox gamebox) {
+        if (canMoveDown(gamebox)) {
+            super.moveDown(gamebox);
+        }
     }
 
-    public void moveLeft() {
-        col--;
+    // Metod för att flytta Pacman åt vänster om möjligt
+    @Override
+    public void moveLeft(Gamebox gamebox) {
+        if (canMoveLeft(gamebox)) {
+            super.moveLeft(gamebox);
+        }
     }
 
-    public void moveRight() {
-        col++;
+    // Metod för att flytta Pacman åt höger om möjligt
+    @Override
+    public void moveRight(Gamebox gamebox) {
+        if (canMoveRight(gamebox)) {
+            super.moveRight(gamebox);
+        }
     }
 
-    public int getRow() {
-        return row;
+    // Privat metod för att kontrollera om Pacman kan flyttas uppåt
+    private boolean canMoveUp(Gamebox gamebox) {
+        Point nextPosition = new Point(getPosition().x, getPosition().y - 50);
+        return isValidPosition(gamebox, nextPosition);
     }
 
-    public int getCol() {
-        return col;
+    // Privat metod för att kontrollera om Pacman kan flyttas nedåt
+    private boolean canMoveDown(Gamebox gamebox) {
+        Point nextPosition = new Point(getPosition().x, getPosition().y + 50);
+        return isValidPosition(gamebox, nextPosition);
+    }
+
+    // Privat metod för att kontrollera om Pacman kan flyttas åt vänster
+    private boolean canMoveLeft(Gamebox gamebox) {
+        Point nextPosition = new Point(getPosition().x - 50, getPosition().y);
+        return isValidPosition(gamebox, nextPosition);
+    }
+
+    // Privat metod för att kontrollera om Pacman kan flyttas åt höger
+    private boolean canMoveRight(Gamebox gamebox) {
+        Point nextPosition = new Point(getPosition().x + 50, getPosition().y);
+        return isValidPosition(gamebox, nextPosition);
+    }
+
+    // Privat metod för att kontrollera om en position är giltig för Pacman
+    private boolean isValidPosition(Gamebox gamebox, Point position) {
+        int row = position.y / 50;
+        int col = position.x / 50;
+        return row >= 0 && row < gamebox.getRows() && col >= 0 && col < gamebox.getCols() &&
+                !gamebox.getCell(row, col).isWall();
     }
 }
