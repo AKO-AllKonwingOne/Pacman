@@ -1,39 +1,26 @@
+import java.awt.Point;
 import java.util.Random;
 
-public class Ghost {
-    private int row;
-    private int col;
-
-    public Ghost(int row, int col) {
-        this.row = row;
-        this.col = col;
+// Klassen som representerar spöket, ärver från Entity
+public class Ghost extends Entity {
+    // Konstruktor för att skapa ett spöke med given position
+    public Ghost(int x, int y) {
+        super(x, y);
     }
 
+    // Metod för att flytta spöket och hantera kollisioner
+    @Override
     public void move(Gamebox gamebox) {
-        Random random = new Random();
-        int[] dx = {0, 0, 1, -1};
-        int[] dy = {1, -1, 0, 0};
-        int newDirection = random.nextInt(4); // 0: up, 1: down, 2: left, 3: right
+        super.move(gamebox); // Flytta spöket
+        handleCollision(gamebox); // Hantera kollisioner efter flytten
+    }
 
-        int newRow = row + dx[newDirection];
-        int newCol = col + dy[newDirection];
-
-        if (isValidMove(gamebox, newRow, newCol)) {
-            row = newRow;
-            col = newCol;
+    // Privat metod för att hantera kollisioner
+    private void handleCollision(Gamebox gamebox) {
+        // Kontrollera om spöket kolliderar med en vägg
+        if (gamebox.getCell(getPosition().x / 50, getPosition().y / 50).isWall()) {
+            // Spöket kolliderade med en vägg, flytta tillbaka till föregående position
+            super.moveBack();
         }
-    }
-
-    private boolean isValidMove(Gamebox gamebox, int row, int col) {
-        return row >= 0 && row < gamebox.getRows() && col >= 0 && col < gamebox.getCols() &&
-                !gamebox.getCell(row, col).isWall();
-    }
-
-    public int getRow() {
-        return row;
-    }
-
-    public int getCol() {
-        return col;
     }
 }

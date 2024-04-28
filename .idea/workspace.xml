@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="la till kommentarer">
+    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="fixade pacman och gjorde kommentarer, gjorde även så att gamebox fungerade, man kan nu inte åka igenom väggar och man spawner inte på ghost så man auto dör">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ghost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +92,7 @@
       <workItem from="1713879599592" duration="671000" />
       <workItem from="1713941898052" duration="12000" />
       <workItem from="1714032902677" duration="1741000" />
-      <workItem from="1714306924258" duration="2726000" />
+      <workItem from="1714306924258" duration="3209000" />
     </task>
     <task id="LOCAL−00001" summary="gjorde klart main, programmet fungerar inte än dock">
       <option name="closed" value="true" />
@@ -147,7 +150,14 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1714313298809</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="fixade pacman och gjorde kommentarer, gjorde även så att gamebox fungerade, man kan nu inte åka igenom väggar och man spawner inte på ghost så man auto dör">
+      <option name="closed" value="true" />
+      <created>1714315532735</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1714315532735</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +172,8 @@
     <MESSAGE value="arbeta lite på game.java" />
     <MESSAGE value="behöver ändra typ hela koden för att för att lägga till arv och för att kunna vinna spelet." />
     <MESSAGE value="la till kommentarer" />
-    <option name="LAST_COMMIT_MESSAGE" value="la till kommentarer" />
+    <MESSAGE value="fixade pacman och gjorde kommentarer" />
+    <MESSAGE value="fixade pacman och gjorde kommentarer, gjorde även så att gamebox fungerade, man kan nu inte åka igenom väggar och man spawner inte på ghost så man auto dör" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixade pacman och gjorde kommentarer, gjorde även så att gamebox fungerade, man kan nu inte åka igenom väggar och man spawner inte på ghost så man auto dör" />
   </component>
 </project>
