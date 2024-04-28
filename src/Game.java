@@ -2,47 +2,50 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.util.Scanner;
 
+// Huvudklassen som hanterar spelet
 public class Game {
-    private final Rectangle gameArea;
-    private final Pacman pacman;
-    private final Ghost ghost;
-    private final Gamebox gamebox;
-    private final Point goalPosition;
+    private final Rectangle gameArea; // Spelområdet
+    private final Pacman pacman; // Pacman-objektet
+    private final Ghost ghost; // Spöket-objektet
+    private final Gamebox gamebox; // Spelplanen
+    private final Point goalPosition; // Målet position
 
+    // Konstruktör för att skapa ett nytt spel
     public Game() {
         final int rows = 10;
         final int columns = 10;
-        final int cellSize = 50; // The size of each cell in pixels
+        final int cellSize = 50; // Storleken på varje cell i pixlar
 
         gameArea = new Rectangle(columns * cellSize, rows * cellSize);
         gamebox = new Gamebox(rows, columns);
         pacman = new Pacman(0, 0);
         ghost = new Ghost(0, 0);
 
-        // Set a random goal position that is different from Pacman's and the ghost's positions
+        // Ställ in en slumpmässig målposition som skiljer sig från Pacmans och spökets positioner
         Point tempGoalPosition;
         do {
             tempGoalPosition = new Point((int) (Math.random() * 10) * 50, (int) (Math.random() * 10) * 50);
         } while (tempGoalPosition.equals(pacman.getPosition()) || tempGoalPosition.equals(ghost.getPosition()));
         goalPosition = tempGoalPosition;
 
-        play();
+        play(); // Starta spelet
     }
 
+    // Metod som hanterar spelet
     private void play() {
-        System.out.println("Welcome to Pacman!");
-        System.out.println("Rules:");
-        System.out.println("- Use WASD keys to move Pacman.");
-        System.out.println("- Reach the goal position to win the game.");
+        System.out.println("Välkommen till Pacman!");
+        System.out.println("Regler:");
+        System.out.println("- Använd WASD-tangenterna för att flytta Pacman.");
+        System.out.println("- Nå målpositionen för att vinna spelet.");
 
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            displayGameboard();
-            System.out.print("Enter your move (WASD): ");
-            String move = scanner.next().toLowerCase();
+            displayGameboard(); // Visa spelplanen
+            System.out.print("Ange ditt drag (WASD): ");
+            String dragning = scanner.next().toLowerCase();
 
-            switch (move) {
+            switch (dragning) {
                 case "w":
                     pacman.moveUp(gamebox);
                     break;
@@ -56,23 +59,24 @@ public class Game {
                     pacman.moveRight(gamebox);
                     break;
                 default:
-                    System.out.println("Invalid move!");
+                    System.out.println("Ogiltigt drag!");
             }
 
             ghost.move(gamebox);
 
             if (pacman.getPosition().equals(ghost.getPosition())) {
-                System.out.println("Game Over! Ghost caught Pacman.");
+                System.out.println("Spelet är över! Spöket fångade Pacman.");
                 break;
             }
 
             if (pacman.getPosition().equals(goalPosition)) {
-                System.out.println("Congratulations! You won the game!");
+                System.out.println("Grattis! Du vann spelet!");
                 break;
             }
         }
     }
 
+    // Metod för att visa spelplanen
     private void displayGameboard() {
         for (int i = 0; i < gameArea.height; i += 50) {
             for (int j = 0; j < gameArea.width; j += 50) {
@@ -92,4 +96,4 @@ public class Game {
             System.out.println();
         }
     }
-}}
+}
