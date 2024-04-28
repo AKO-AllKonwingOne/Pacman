@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="gjorde lite mer på ghost,gjorde några methods som jag inte har lagt till än, det är därför några saker är röt" />
+    <list default="true" id="a6745437-60c1-41e7-82c3-8fcf41a3fa26" name="Changes" comment="arbeta lite på game.java">
+      <change afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gamebox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gamebox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ghost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ghost.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +26,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AKO-AllKonwingOne"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AKO-AllKonwingOne&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AKO-AllKonwingOne/Pacman.git",
-    "accountId": "e7dbdf23-005c-47de-9bed-65e7f7dddcbc"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AKO-AllKonwingOne/Pacman.git&quot;,
+    &quot;accountId&quot;: &quot;e7dbdf23-005c-47de-9bed-65e7f7dddcbc&quot;
   }
-}]]></component>
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -41,22 +50,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hugo.lindgrensvenss/Programmering 2/Pacman&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/hugo.lindgrensvenss/Programmering 2/Pacman/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hugo.lindgrensvenss/Programmering 2/Pacman",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/hugo.lindgrensvenss/Programmering 2/Pacman/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +92,8 @@
       <workItem from="1713879272803" duration="148000" />
       <workItem from="1713879599592" duration="671000" />
       <workItem from="1713941898052" duration="12000" />
-      <workItem from="1714032902677" duration="1357000" />
+      <workItem from="1714032902677" duration="1741000" />
+      <workItem from="1714306924258" duration="1252000" />
     </task>
     <task id="LOCAL−00001" summary="gjorde klart main, programmet fungerar inte än dock">
       <option name="closed" value="true" />
@@ -119,7 +130,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1714035196678</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="arbeta lite på game.java">
+      <option name="closed" value="true" />
+      <created>1714036955597</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1714036955597</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +149,7 @@
     <MESSAGE value="arbetade på cell" />
     <MESSAGE value="arbetade på ghost.java under fritid." />
     <MESSAGE value="gjorde lite mer på ghost,gjorde några methods som jag inte har lagt till än, det är därför några saker är röt" />
-    <option name="LAST_COMMIT_MESSAGE" value="gjorde lite mer på ghost,gjorde några methods som jag inte har lagt till än, det är därför några saker är röt" />
+    <MESSAGE value="arbeta lite på game.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="arbeta lite på game.java" />
   </component>
 </project>

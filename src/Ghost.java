@@ -13,14 +13,10 @@ public class Ghost {
         Random random = new Random();
         int[] dx = {0, 0, 1, -1};
         int[] dy = {1, -1, 0, 0};
-        int direction = random.nextInt(4); // 0: up, 1: down, 2: left, 3: right
+        int newDirection = random.nextInt(4); // 0: up, 1: down, 2: left, 3: right
 
-        int newRow = row + dx[direction];
-        int newCol = col + dy[direction];
-        int direction = random.nextInt(4); // 0: up, 1: down, 2: left, 3: right
-
-        int newRow = row + dx[direction];
-        int newCol = col + dy[direction];
+        int newRow = row + dx[newDirection];
+        int newCol = col + dy[newDirection];
 
         if (isValidMove(gamebox, newRow, newCol)) {
             row = newRow;
